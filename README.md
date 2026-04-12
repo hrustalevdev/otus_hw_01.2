@@ -280,6 +280,16 @@ mini-survey/
 Проверь, чтобы сборка и работа docker-контейнера работала и собиралась без ошибок. Если будут ошибки - исправь и проверь, чтобы всё собиралось и работало без ошибок.
 ```
 
+## Скриншоты
+
+#### Фронт:
+
+<img width="699" height="759" alt="image" src="https://github.com/user-attachments/assets/825dc3af-97fb-4b38-9e72-b315e6ea6381" />
+
+#### Ответ на бэке:
+
+<img width="579" height="621" alt="image" src="https://github.com/user-attachments/assets/3b4d8fa0-c53c-4472-ac84-6ba6bdf1aba2" />
+
 ## API
 
 Интерактивная документация доступна через Swagger UI по адресу `http://localhost:3001/api-docs`.
