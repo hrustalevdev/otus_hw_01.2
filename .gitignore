@@ -1,0 +1,34 @@
+# Dependencies
+**/node_modules/
+
+# Next.js
+**/.next/
+**/next-env.d.ts
+**/out/
+
+# Build output
+**/dist/
+**/build/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE / editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Claude Code (local settings)
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
