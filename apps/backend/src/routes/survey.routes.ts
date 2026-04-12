@@ -4,11 +4,51 @@ import { SubmitAnswersDto } from '../types/survey.types';
 
 export const surveyRouter = Router();
 
+/**
+ * @swagger
+ * /questions:
+ *   get:
+ *     summary: Получить список вопросов опроса
+ *     tags: [Survey]
+ *     responses:
+ *       200:
+ *         description: Список вопросов успешно получен
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/QuestionsResponse'
+ */
 surveyRouter.get('/questions', (_req: Request, res: Response) => {
   const questions = surveyService.getQuestions();
   res.status(200).json({ questions });
 });
 
+/**
+ * @swagger
+ * /answers:
+ *   post:
+ *     summary: Отправить ответы на вопросы опроса
+ *     tags: [Survey]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             $ref: '#/components/schemas/SubmitAnswersDto'
+ *     responses:
+ *       201:
+ *         description: Ответы успешно сохранены
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/SuccessResponse'
+ *       400:
+ *         description: Некорректные входные данные
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/ErrorResponse'
+ */
 surveyRouter.post('/answers', (req: Request, res: Response) => {
   const body = req.body as SubmitAnswersDto;
 
