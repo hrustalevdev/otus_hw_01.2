@@ -266,7 +266,7 @@ mini-survey/
 - Не добавлять БД — только in-memory хранение на бэкенде
 ```
 
-* добавления swagger, docker, README:
+* добавление swagger, docker, README:
 
 ```text
 • Добавь поддержку swagger для backend;
