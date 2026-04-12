@@ -1,0 +1,9 @@
+{
+  "name": "mini-survey",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --filter @mini-survey/backend dev & pnpm --filter @mini-survey/frontend dev",
+    "dev:backend": "pnpm --filter @mini-survey/backend dev",
+    "dev:frontend": "pnpm --filter @mini-survey/frontend dev"
+  }
+}
