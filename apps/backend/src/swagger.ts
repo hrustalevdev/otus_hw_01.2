@@ -80,6 +80,15 @@ const options: swaggerJsdoc.Options = {
             },
           },
         },
+        AnswersResponse: {
+          type: 'object',
+          properties: {
+            answers: {
+              type: 'array',
+              items: { $ref: '#/components/schemas/Answer' },
+            },
+          },
+        },
         SuccessResponse: {
           type: 'object',
           properties: {

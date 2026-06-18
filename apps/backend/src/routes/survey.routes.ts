@@ -49,6 +49,25 @@ surveyRouter.get('/questions', (_req: Request, res: Response) => {
  *             schema:
  *               $ref: '#/components/schemas/ErrorResponse'
  */
+/**
+ * @swagger
+ * /answers:
+ *   get:
+ *     summary: Получить все сохранённые ответы
+ *     tags: [Survey]
+ *     responses:
+ *       200:
+ *         description: Список ответов успешно получен
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/AnswersResponse'
+ */
+surveyRouter.get('/answers', (_req: Request, res: Response) => {
+  const answers = surveyService.getAnswers();
+  res.status(200).json({ answers });
+});
+
 surveyRouter.post('/answers', (req: Request, res: Response) => {
   const body = req.body as SubmitAnswersDto;
 

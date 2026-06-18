@@ -1,1 +1,1 @@
-export type { Question, Answer, SubmitAnswersDto, QuestionsResponse } from '@mini-survey/shared-types';
+export type { Question, Answer, SubmitAnswersDto, QuestionsResponse, AnswersResponse } from '@mini-survey/shared-types';

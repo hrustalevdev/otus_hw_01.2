@@ -17,3 +17,7 @@ export interface SubmitAnswersDto {
 export interface QuestionsResponse {
   questions: Question[];
 }
+
+export interface AnswersResponse {
+  answers: Answer[];
+}
